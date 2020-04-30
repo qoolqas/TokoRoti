@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.qoolqas.tokoroti.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_nav_home_to_nav_lokasi"
+            app:destination="@id/nav_lokasi" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_semua"
+            app:destination="@id/nav_semua" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_kategori"
+            app:destination="@id/nav_kategori" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_catatan"
+            app:destination="@id/nav_catatan" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_kategori"
+        android:name="com.qoolqas.tokoroti.ui.roti.KategoriRotiFragment"
+        android:label="Tambah Roti"
+        tools:layout="@layout/fragment_kategori" />
+
+    <fragment
+        android:id="@+id/nav_catatan"
+        android:name="com.qoolqas.tokoroti.ui.catatan.CatatanFragment"
+        android:label="Catatan Pembelian"
+        tools:layout="@layout/fragment_catatan" />
+    <fragment
+        android:id="@+id/nav_semua"
+        android:name="com.qoolqas.tokoroti.ui.roti.SemuaFragment"
+        android:label="Semua Roti"
+        tools:layout="@layout/fragment_semua" />
+    <fragment
+        android:id="@+id/nav_lokasi"
+        android:name="com.qoolqas.tokoroti.ui.lokasi.LokasiFragment"
+        android:label="Lokasi Toko"
+        tools:layout="@layout/fragment_lokasi" />
+</navigation>
