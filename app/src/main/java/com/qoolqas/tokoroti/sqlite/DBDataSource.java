@@ -312,7 +312,7 @@ public class DBDataSource {
         values.put(DBHelper.R_KODE,dataRoti.getR_KODE());
         values.put(DBHelper.R_NAMA ,dataRoti.getR_NAMA());
         values.put(DBHelper.R_DESKRIPSI ,dataRoti.getR_DESKRIPSI());
-        values.put(DBHelper.R_HARGA, dataRoti.getR_SELECTION());
+        values.put(DBHelper.R_HARGA, dataRoti.getR_HARGA());
         values.put(DBHelper.R_IMAGE, dataRoti.getR_IMAGE());
         values.put(DBHelper.R_SELECTION ,dataRoti.getR_SELECTION());
 

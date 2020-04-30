@@ -12,6 +12,7 @@
         android:background="@drawable/gradient">
 
     </View>
+
     <include
         android:id="@+id/shimmer_grid"
         layout="@layout/item_grid">

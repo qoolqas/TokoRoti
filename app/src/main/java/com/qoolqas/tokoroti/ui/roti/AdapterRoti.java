@@ -54,9 +54,8 @@ public class AdapterRoti extends RecyclerView.Adapter<AdapterRoti.ViewHolder> {
         datasource = new DBDataSource(fragment.getActivity());
         final RotiProvider items = rotiList.get(position);
         holder.image.setImageBitmap(StringToBitMap(items.getR_IMAGE()));
-        Log.d("image", String.valueOf(items.getR_IMAGE()));
         holder.nama.setText(items.getR_NAMA());
-        holder.harga.setText(items.getR_HARGA());
+        holder.harga.setText("RP "+items.getR_HARGA());
         holder.more.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
