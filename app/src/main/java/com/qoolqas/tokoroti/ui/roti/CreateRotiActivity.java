@@ -111,7 +111,7 @@ public class CreateRotiActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (edit.equals("1")) {
-                    editMember();
+                    editRoti();
                 } else {
                     createRoti();
                 }
@@ -137,7 +137,7 @@ public class CreateRotiActivity extends AppCompatActivity {
         }
     }
 
-    private void editMember() {
+    private void editRoti() {
         BitmapDrawable drawable1 = (BitmapDrawable) photo.getDrawable();
         bitmapPhoto = drawable1.getBitmap();
         DataRoti data = new DataRoti();

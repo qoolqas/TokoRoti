@@ -16,9 +16,11 @@ import androidx.lifecycle.ViewModelProviders;
 import androidx.navigation.Navigation;
 
 import com.qoolqas.tokoroti.R;
+import com.qoolqas.tokoroti.pojo.DataUser;
 import com.qoolqas.tokoroti.ui.roti.CreateRotiActivity;
 
 public class HomeFragment extends Fragment {
+
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -29,6 +31,8 @@ public class HomeFragment extends Fragment {
         CardView semua = root.findViewById(R.id.cardSemua);
         CardView catatan = root.findViewById(R.id.cardCatatan);
         CardView lokasi = root.findViewById(R.id.cardLokasi);
+
+
 
         kategori.setOnClickListener(new View.OnClickListener() {
             @Override
